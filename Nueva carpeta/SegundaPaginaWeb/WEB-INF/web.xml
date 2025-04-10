@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>IntroducirAutorServlet</servlet-name>
+        <servlet-class>servlets.IntroducirAutorServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>IntroducirAutorServlet</servlet-name>
+        <url-pattern>/introducirAutor</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ConsultarAutorServlet</servlet-name>
+        <servlet-class>servlets.ConsultarAutorServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ConsultarAutorServlet</servlet-name>
+        <url-pattern>/consultarAutor</url-pattern>
+    </servlet-mapping>
+
+</web-app>
